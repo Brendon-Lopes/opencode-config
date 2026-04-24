@@ -1,0 +1,82 @@
+{
+  "$schema": "https://unpkg.com/oh-my-opencode-slim@latest/oh-my-opencode-slim.schema.json",
+  "preset": "opencode-go",
+  "autoUpdate": false,
+  "showStartupToast": true,
+
+  "presets": {
+    "opencode-go": {
+      // Master delegator and strategic coordinator
+      // Needs strongest all-around coding model
+      "orchestrator": {
+        "model": "opencode-go/kimi-k2.6",
+        "variant": "high",
+        "skills": ["*"],
+        "mcps": ["*", "!context7"],
+      },
+
+      // Strategic advisor and debugger of last resort
+      // Needs deep reasoning for architecture and hard debugging
+      "oracle": {
+        "model": "opencode-go/qwen3.6-plus",
+        "variant": "high",
+        "skills": ["simplify"],
+        "mcps": [],
+      },
+
+      // Codebase reconnaissance — fast search and scouting
+      // Speed and cost efficiency matter most
+      "explorer": {
+        "model": "opencode-go/minimax-m2.5",
+        "variant": "low",
+        "skills": [],
+        "mcps": [],
+      },
+
+      // External knowledge retrieval — docs and research
+      // Fast and cheap for broad lookups
+      "librarian": {
+        "model": "opencode-go/minimax-m2.5",
+        "variant": "low",
+        "skills": [],
+        "mcps": ["websearch", "context7", "grep_app"],
+      },
+
+      // UI/UX implementation and visual excellence
+      // Strong at frontend judgment and polish
+      "designer": {
+        "model": "opencode-go/kimi-k2.5",
+        "variant": "medium",
+        "skills": ["agent-browser"],
+        "mcps": [],
+      },
+
+      // Fast implementation specialist
+      // Reliable execution for bounded tasks
+      "fixer": {
+        "model": "opencode-go/qwen3.5-plus",
+        "variant": "low",
+        "skills": [],
+        "mcps": [],
+      },
+
+      // Multi-LLM consensus and synthesis
+      // Strong synthesis model (manual use only, high cost)
+      "council": {
+        "model": "opencode-go/kimi-k2.6",
+        "variant": "medium",
+        "skills": [],
+        "mcps": [],
+      },
+
+      // Read-only visual analysis (disabled by default)
+      // Vision-capable for screenshots, images, PDFs
+      "observer": {
+        "model": "opencode-go/mimo-v2-omni",
+        "variant": "medium",
+        "skills": [],
+        "mcps": [],
+      },
+    },
+  },
+}
