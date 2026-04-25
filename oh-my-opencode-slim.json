@@ -9,10 +9,19 @@
       // Master delegator and strategic coordinator
       // Needs strongest all-around coding model
       "orchestrator": {
-        "model": "opencode-go/kimi-k2.6",
+        "model": "openai/gpt-5.5",
         "variant": "high",
         "skills": ["*"],
         "mcps": ["*", "!context7"],
+      },
+
+      // Codebase reconnaissance — fast search and scouting
+      // Speed and cost efficiency matter most
+      "explorer": {
+        "model": "opencode-go/minimax-m2.5",
+        "variant": "low",
+        "skills": [],
+        "mcps": [],
       },
 
       // Strategic advisor and debugger of last resort
@@ -24,11 +33,11 @@
         "mcps": [],
       },
 
-      // Codebase reconnaissance — fast search and scouting
-      // Speed and cost efficiency matter most
-      "explorer": {
-        "model": "opencode-go/minimax-m2.5",
-        "variant": "low",
+
+      // Multi-LLM consensus and synthesis
+      // Strong synthesis model (manual use only, high cost)
+      "council": {
+        "model": "openai/gpt-5.5",
         "skills": [],
         "mcps": [],
       },
@@ -45,7 +54,7 @@
       // UI/UX implementation and visual excellence
       // Strong at frontend judgment and polish
       "designer": {
-        "model": "opencode-go/kimi-k2.5",
+        "model": "opencode-go/kimi-k2.6",
         "variant": "medium",
         "skills": ["agent-browser"],
         "mcps": [],
@@ -54,17 +63,8 @@
       // Fast implementation specialist
       // Reliable execution for bounded tasks
       "fixer": {
-        "model": "opencode-go/qwen3.5-plus",
+        "model": "openai/gpt-5.4-mini",
         "variant": "low",
-        "skills": [],
-        "mcps": [],
-      },
-
-      // Multi-LLM consensus and synthesis
-      // Strong synthesis model (manual use only, high cost)
-      "council": {
-        "model": "opencode-go/kimi-k2.6",
-        "variant": "medium",
         "skills": [],
         "mcps": [],
       },
